@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagens</title>
+</head>
+<body>
+    <h1>Lista de postagens</h1> <hr>
+    {{#each postagens}}
+        Titulo: {{titulo}} <br>
+        Conteudo: {{postagem}}  <br><br>
+        <a {{!-- href="/del-post/{{id}}" --}}><button>Apagar</button></a> <br><br><br> <hr>
+        
+    {{/each}}
+</body>
+</html>
